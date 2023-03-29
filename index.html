@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Find your Favorites phone</title> 
+     <!-- bootsrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts link  --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Tilt+Neon&display=swap" rel="stylesheet"> 
+    <!-- font awsome cdn  --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header> 
+           <!-- nav section  --> 
+            <div class="">
+            <nav class="navbar bg-light px-5" data-bs-theme="dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Phone Hunter</a>
+                </div>
+            </nav>
+            </div>
+            <h1 class="header_text">Welcome to Phone Hunter !</h1>
+
+            <section class="banner">
+                 <!-- searching fild  -->
+                <div class="input-group w-25"> 
+                    <input id="src-fild" type="text" class="form-control sm-px-5" placeholder="Enter a brand name" aria-label="Recipient's username with two button addons">
+                    <button id="src-btn" class="btn  bg-warning " type="button">search</button>
+                  </div> 
+                  <div id="error-mssg" class="px-5 pt-3 d-none">
+                    <h3   style="color:#ffff;">No Phone Found . Please try a new one ...</h3>
+                  </div>
+                  
+            </section> 
+           
+    </header> 
+    <main class="container mt-5"> 
+        <h1 class="mb-5" style="text-align: center;color: #ffff;">Phone List</h1>
+      <section >
+        <div id="phone-card" class="row row-cols-1 row-cols-md-3 g-4">
+
+          </div>
+      </section> 
+      <!-- show details modal section  --> 
+       
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div id="modalDetails" class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- show all button   -->  
+      <div id="showAll" class="bnt d-none">
+        <button id="showAll-btn" class="button-Show">
+            Show All
+          </button>
+      </div>
+      
+      <!-- spinner show or loader showing  --> 
+      <section id="loader" class="d-none">
+        <div style="height: 400px; width: 100%; margin: -320px 0px 0px 0px;" class="d-flex justify-content-center align-items-center">
+            <button  class="btn btn-primary " type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading wait a minute...
+              </button>
+          </div>
+      </section>
+      
+      
+    </main> 
+    <footer>
+     <p style="text-align: center; color: #ffff;">&copy;SHAHADAT HOSSAIN 2023</p>
+    </footer>
+
+
+    <!-- javascript all external file link  --> 
+    <script src="js/app.js"></script> 
+    <!-- bootstrap javascript cdn link  --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
